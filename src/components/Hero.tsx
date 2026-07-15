@@ -12,7 +12,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="top" className="relative flex min-h-[100svh] items-center justify-center overflow-hidden px-4 sm:px-6">
+    <section id="top" className="relative flex min-h-[100vh] min-h-[100svh] items-center justify-center overflow-hidden px-4 sm:px-6">
       <div className="absolute inset-0">
         <img
           src="https://images.pexels.com/photos/2014773/pexels-photo-2014773.jpeg?auto=compress&cs=tinysrgb&w=1920"

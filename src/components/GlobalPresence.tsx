@@ -8,7 +8,7 @@ export default function GlobalPresence() {
   const [hovered, setHovered] = useState<string | null>(null);
 
   return (
-    <section ref={ref} className="relative bg-ink-975 py-16 sm:py-24 md:py-32">
+    <section ref={ref} className="relative bg-ink-975 px-4 py-10 sm:px-6 sm:py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         <div className={`reveal ${visible ? 'is-visible' : ''} text-center`}>
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.35em] text-gold-300">
@@ -25,7 +25,7 @@ export default function GlobalPresence() {
         </div>
 
         {/* World Map */}
-        <div className={`reveal ${visible ? 'is-visible' : ''} relative mx-auto mt-10 sm:mt-16 max-w-4xl`}>
+        <div className={`reveal ${visible ? 'is-visible' : ''} relative mx-auto mt-6 sm:mt-16 max-w-4xl`}>
           <div className="relative aspect-[16/9] sm:aspect-[1009/666] overflow-hidden rounded-2xl glass p-2 sm:p-4">
             {/* Original Map Background */}
             <img

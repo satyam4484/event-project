@@ -6,7 +6,7 @@ export default function Counters() {
   const { ref, visible } = useReveal();
 
   return (
-    <section ref={ref} className="relative bg-ink-950 py-16 sm:py-24 md:py-32">
+    <section ref={ref} className="relative bg-ink-950 px-4 py-10 sm:px-6 sm:py-24 md:py-32">
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-ink-975 via-ink-950 to-ink-975" />
       </div>
@@ -21,7 +21,7 @@ export default function Counters() {
           </h2>
         </div>
 
-        <div className="mt-10 sm:mt-16 grid grid-cols-2 gap-3 sm:gap-4 sm:grid-cols-3 lg:grid-cols-4">
+        <div className="mt-6 sm:mt-16 grid grid-cols-2 gap-3 sm:gap-4 sm:grid-cols-3 lg:grid-cols-4">
           {counters.map((counter, i) => {
             const IconComp = (Icon as any)[counter.icon] ?? Icon.Star;
             return (

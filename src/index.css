@@ -6,11 +6,14 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   scroll-behavior: smooth;
   min-width: 320px;
+  height: 100%;
 }
 
 body {
@@ -20,6 +23,22 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   min-width: 320px;
+  height: 100%;
+}
+
+/* Critical fix for real mobile device extra space issues */
+img, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+section {
+  overflow: hidden;
 }
 
 img,

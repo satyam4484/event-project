@@ -8,7 +8,7 @@ export default function Companies() {
   const marquee = [...companies, ...companies];
 
   return (
-    <section ref={ref} className="relative bg-ink-950 px-4 py-16 sm:px-6 sm:py-24 md:py-32">
+    <section ref={ref} className="relative bg-ink-950 px-4 py-10 sm:px-6 sm:py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         <div className={`reveal ${visible ? 'is-visible' : ''} text-center`}>
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.35em] text-gold-300">
@@ -25,7 +25,7 @@ export default function Companies() {
       </div>
 
       {/* Marquee */}
-      <div className={`reveal ${visible ? 'is-visible' : ''} relative mt-8 overflow-hidden sm:mt-16`} style={{ transitionDelay: '0.2s' }}>
+      <div className={`reveal ${visible ? 'is-visible' : ''} relative mt-6 overflow-hidden sm:mt-16`} style={{ transitionDelay: '0.2s' }}>
         <div className="marquee-track gap-4">
           {marquee.map((company, i) => (
             <div
