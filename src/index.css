@@ -6,11 +6,15 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   scroll-behavior: smooth;
   min-width: 320px;
+  height: 100%;
+  width: 100%;
 }
 
 body {
@@ -18,8 +22,23 @@ body {
   background-color: #121110;
   color: #f6f6f4;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   min-width: 320px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+/* TEMP DEBUG STYLES - REMOVE LATER */
+section {
+  border: 2px dashed rgba(212, 167, 60, 0.4) !important;
+}
+main {
+  border: 2px dashed rgba(255, 100, 100, 0.4) !important;
+}
+#root {
+  border: 2px dashed rgba(100, 255, 100, 0.4) !important;
 }
 
 img,
