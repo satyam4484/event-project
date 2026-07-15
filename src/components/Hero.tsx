@@ -35,7 +35,7 @@ export default function Hero() {
         </h1>
 
         <p className="mt-5 text-sm font-medium tracking-wide text-gold-200/90 sm:text-base md:text-lg animate-fade-up" style={{ animationDelay: '0.15s' }}>
-          600+ Weddings &nbsp;•&nbsp; 200+ Corporate Events &nbsp;•&nbsp; Global Event Professionals
+          600+ Weddings  •  200+ Corporate Events  •  Global Event Professionals
         </p>
 
         <p className="mx-auto mt-6 max-w-3xl text-sm font-light leading-relaxed text-ink-100/70 sm:text-base md:text-lg animate-fade-up" style={{ animationDelay: '0.3s' }}>
