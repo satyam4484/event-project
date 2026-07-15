@@ -6,22 +6,22 @@ export default function Counters() {
   const { ref, visible } = useReveal();
 
   return (
-    <section ref={ref} className="relative bg-ink-950 py-24 md:py-32">
+    <section ref={ref} className="relative bg-ink-950 py-16 sm:py-24 md:py-32">
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-ink-975 via-ink-950 to-ink-975" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-10">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         <div className={`reveal ${visible ? 'is-visible' : ''} text-center`}>
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.35em] text-gold-300">
             Our Experience
           </p>
-          <h2 className="mx-auto max-w-3xl font-serif text-4xl font-light leading-tight text-ink-50 md:text-5xl lg:text-6xl">
+          <h2 className="mx-auto max-w-3xl font-serif text-3xl font-light leading-tight text-ink-50 sm:text-4xl md:text-5xl lg:text-6xl">
             A Track Record of <span className="gold-text font-medium">Excellence</span>
           </h2>
         </div>
 
-        <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+        <div className="mt-10 sm:mt-16 grid grid-cols-2 gap-3 sm:gap-4 sm:grid-cols-3 lg:grid-cols-4">
           {counters.map((counter, i) => {
             const IconComp = (Icon as any)[counter.icon] ?? Icon.Star;
             return (

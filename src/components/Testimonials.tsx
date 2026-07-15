@@ -17,12 +17,12 @@ export default function Testimonials() {
 
   return (
     <section ref={ref} className="relative bg-ink-975 px-4 py-16 sm:px-6 sm:py-24 md:py-32">
-      <div className="mx-auto max-w-5xl lg:px-10">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-10">
         <div className={`reveal ${visible ? 'is-visible' : ''} text-center`}>
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.35em] text-gold-300">
             Client Testimonials
           </p>
-          <h2 className="font-serif text-4xl font-light leading-tight text-ink-50 md:text-5xl lg:text-6xl">
+          <h2 className="font-serif text-3xl font-light leading-tight text-ink-50 sm:text-4xl md:text-5xl lg:text-6xl">
             Trusted by <span className="gold-text font-medium">Discerning Clients</span>
           </h2>
         </div>

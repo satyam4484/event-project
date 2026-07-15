@@ -79,8 +79,8 @@ ${form.message.trim() || 'No message provided.'}`;
   };
 
   return (
-    <section id="contact" ref={ref} className="relative bg-ink-950 px-4 py-16 sm:px-6 sm:py-20 md:px-8 md:py-24 lg:px-10 lg:py-32">
-      <div className="mx-auto max-w-7xl">
+    <section id="contact" ref={ref} className="relative bg-ink-950 px-4 py-16 sm:px-6 sm:py-24 md:px-8 md:py-32 lg:px-10 lg:py-32">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         <div className={`reveal ${visible ? 'is-visible' : ''} text-center`}>
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.35em] text-gold-300">
             Get In Touch

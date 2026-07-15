@@ -5,18 +5,18 @@ export default function Process() {
   const { ref, visible } = useReveal();
 
   return (
-    <section ref={ref} className="relative bg-ink-975 py-24 md:py-32">
-      <div className="mx-auto max-w-5xl px-6 lg:px-10">
+    <section ref={ref} className="relative bg-ink-975 py-16 sm:py-24 md:py-32">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-10">
         <div className={`reveal ${visible ? 'is-visible' : ''} text-center`}>
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.35em] text-gold-300">
             Our Event Process
           </p>
-          <h2 className="font-serif text-4xl font-light leading-tight text-ink-50 md:text-5xl lg:text-6xl">
+          <h2 className="font-serif text-3xl font-light leading-tight text-ink-50 sm:text-4xl md:text-5xl lg:text-6xl">
             From Vision to <span className="gold-text font-medium">Celebration</span>
           </h2>
         </div>
 
-        <div className="relative mt-16">
+        <div className="relative mt-10 sm:mt-16">
           {/* Vertical line */}
           <div className="absolute left-6 top-0 bottom-0 w-px timeline-line md:left-1/2 md:-translate-x-1/2" />
 

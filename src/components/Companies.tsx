@@ -9,7 +9,7 @@ export default function Companies() {
 
   return (
     <section ref={ref} className="relative bg-ink-950 px-4 py-16 sm:px-6 sm:py-24 md:py-32">
-      <div className="mx-auto max-w-7xl lg:px-10">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         <div className={`reveal ${visible ? 'is-visible' : ''} text-center`}>
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.35em] text-gold-300">
             Industry Collaborations
@@ -17,7 +17,7 @@ export default function Companies() {
           <h2 className="font-serif text-3xl font-light leading-tight text-ink-50 sm:text-4xl md:text-5xl lg:text-6xl">
             Companies We've <span className="gold-text font-medium">Worked With</span>
           </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-sm font-light text-ink-100/60 sm:text-base">
+          <p className="mx-auto mt-4 sm:mt-6 max-w-2xl text-sm font-light text-ink-100/60 sm:text-base">
             Our team has proudly collaborated with some of the most respected event and wedding
             management companies across India and internationally.
           </p>
@@ -25,7 +25,7 @@ export default function Companies() {
       </div>
 
       {/* Marquee */}
-      <div className={`reveal ${visible ? 'is-visible' : ''} relative mt-10 overflow-hidden sm:mt-16`} style={{ transitionDelay: '0.2s' }}>
+      <div className={`reveal ${visible ? 'is-visible' : ''} relative mt-8 overflow-hidden sm:mt-16`} style={{ transitionDelay: '0.2s' }}>
         <div className="marquee-track gap-4">
           {marquee.map((company, i) => (
             <div

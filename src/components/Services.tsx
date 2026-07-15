@@ -7,17 +7,17 @@ export default function Services() {
 
   return (
     <section id="services" ref={ref} className="relative bg-ink-975 px-4 py-16 sm:px-6 sm:py-24 md:py-32">
-      <div className="mx-auto max-w-7xl lg:px-10">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         <div className={`reveal ${visible ? 'is-visible' : ''} text-center`}>
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.35em] text-gold-300">
             Premium Services
           </p>
-          <h2 className="mx-auto max-w-3xl font-serif text-4xl font-light leading-tight text-ink-50 md:text-5xl lg:text-6xl">
+          <h2 className="mx-auto max-w-3xl font-serif text-3xl font-light leading-tight text-ink-50 sm:text-4xl md:text-5xl lg:text-6xl">
             Comprehensive Event Solutions for <span className="gold-text font-medium">Every Occasion</span>
           </h2>
         </div>
 
-        <div className="mt-10 grid gap-4 sm:mt-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="mt-10 grid gap-3 sm:gap-4 sm:mt-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {services.map((service, i) => {
             const IconComp = (Icon as any)[service.icon] ?? Icon.Sparkles;
             return (

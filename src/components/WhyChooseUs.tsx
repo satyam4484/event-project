@@ -6,18 +6,18 @@ export default function WhyChooseUs() {
   const { ref, visible } = useReveal();
 
   return (
-    <section id="why" ref={ref} className="relative bg-ink-950 py-24 md:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+    <section id="why" ref={ref} className="relative bg-ink-950 py-16 sm:py-24 md:py-32">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         <div className={`reveal ${visible ? 'is-visible' : ''} text-center`}>
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.35em] text-gold-300">
             Why Choose Us
           </p>
-          <h2 className="mx-auto max-w-3xl font-serif text-4xl font-light leading-tight text-ink-50 md:text-5xl lg:text-6xl">
+          <h2 className="mx-auto max-w-3xl font-serif text-3xl font-light leading-tight text-ink-50 sm:text-4xl md:text-5xl lg:text-6xl">
             Why Choose <span className="gold-text font-medium">Team Vicky</span>
           </h2>
         </div>
 
-        <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="mt-10 sm:mt-16 grid gap-3 sm:gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {whyChooseUs.map((item, i) => {
             const IconComp = (Icon as any)[item.icon] ?? Icon.CheckCircle2;
             return (
